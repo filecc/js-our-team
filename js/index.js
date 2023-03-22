@@ -57,6 +57,11 @@ app.append(createChild('div', 'rowApp', [
 const rowApp = document.getElementById('rowApp');
 
 team.forEach(member => {
+    createCards(member);
+});
+
+
+function createCards(member){
     rowApp.append(createChild('div', member.key, ['col'], ''));
     const newElement = document.getElementById(member.key);
     newElement.append(createChild('div', '', ['p-2'], ''));
@@ -74,4 +79,4 @@ team.forEach(member => {
     cardBody.append(cardTitle);
     const cardText = createChild('p', '', ['card-text', 'text-center'], member.role);
     cardBody.append(cardText);
-})
+}
