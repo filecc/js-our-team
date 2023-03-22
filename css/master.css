@@ -3,10 +3,11 @@
 }
 
 main {
-    height: 100vh;
-    height: var(--app-height);
+    min-height: 100vh;
+    min-height: var(--app-height);
     width: 100%;
     background: linear-gradient(60deg, #edebd6, #accdc3, #8ca6ba);
+    background-size: cover;
     animation: 6s ease-in-out infinite animateBG;
 }
 
