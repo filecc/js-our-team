@@ -1,0 +1,41 @@
+:root {
+    --app-height: 100%;
+}
+
+ main{
+    height: 100vh;
+    height: var(--app-height);
+    width: 100%;
+    background: linear-gradient(60deg, #edebd6, #accdc3, #8ca6ba);
+    animation: 6s ease-in-out infinite animateBG;
+ }
+
+ h1 {
+    background: linear-gradient(60deg,#98a2aa, #243140, #345966, #243140 ,#98a2aa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
+ img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+ }
+
+ .card{
+    max-width: 18rem;
+    margin: 0 auto;
+    border: none;
+ }
+
+ @keyframes animateBG{
+    0%, 100% {
+        background-size: 200% 200%;
+        background-position: left center;
+    }
+    50% {
+            background-size: 200% 200%;
+            background-position: right bottom;
+    }
+ }
