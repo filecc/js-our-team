@@ -64,9 +64,8 @@ team.forEach(member => {
     newElement.firstChild.appendChild(card);
 
     const cardImg = createChild('img', '',['card-img-top', 'img-fluid'], '');
-    document.querySelector(`#${member.key} .card`).append(cardImg);
-    const img = document.querySelector(`#${member.key} img`);
-    img.setAttribute('src', `./img/${member.image}`);
+    card.append(cardImg);
+    cardImg.setAttribute('src', `./img/${member.image}`);
 
     const cardBody = createChild('div', '', ['card-body'], '');
     card.append(cardBody);
